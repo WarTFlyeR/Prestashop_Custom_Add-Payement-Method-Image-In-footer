@@ -1,0 +1,125 @@
+/**
+* 2007-2022 PrestaShop
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the Academic Free License (AFL 3.0)
+* that is bundled with this package in the file LICENSE.txt.
+* It is also available through the world-wide-web at this URL:
+* http://opensource.org/licenses/afl-3.0.php
+* If you did not receive a copy of the license and are unable to
+* obtain it through the world-wide-web, please send an email
+* to license@prestashop.com so we can send you a copy immediately.
+*
+* DISCLAIMER
+*
+* Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+* versions in the future. If you wish to customize PrestaShop for your
+* needs please refer to http://www.prestashop.com for more information.
+*
+*  @author    PrestaShop SA <contact@prestashop.com>
+*  @copyright 2007-2022 PrestaShop SA
+*  @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+*  International Registered Trademark & Property of PrestaShop SA
+*
+* Don't forget to prefix your containers with your own identifier
+* to avoid any conflicts with others containers.
+*/
+#mobytic_3_blocks_home .row {
+  padding: 0;
+}
+
+#mobytic_3_blocks_home .row .col-md-4 {
+  margin: 20px 0;
+  padding: 0 10px;
+}
+
+#mobytic_3_blocks_home .row > div > div {
+  --animation-duration-effect: .5s;
+  height: 400px;
+  position: relative;
+  -webkit-transition: var(--animation-duration-effect);
+  transition: var(--animation-duration-effect);
+  border-radius: 15px;
+  background-color: #233e54;
+}
+
+#mobytic_3_blocks_home .row > div > div:hover {
+  -webkit-transition: var(--animation-duration-effect);
+  transition: var(--animation-duration-effect);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  background: rgba(35, 62, 84, 0.75);
+}
+
+#mobytic_3_blocks_home .row > div > div:hover .mobytic_img {
+  -webkit-transform: scale(1.2) translateX(-20px);
+          transform: scale(1.2) translateX(-20px);
+  -webkit-transition: var(--animation-duration-effect);
+  transition: var(--animation-duration-effect);
+}
+
+#mobytic_3_blocks_home .row > div > div .mobytic_img {
+  height: 50%;
+  width: 100%;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+  position: absolute;
+  top: 10%;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: var(--animation-duration-effect);
+  transition: var(--animation-duration-effect);
+}
+
+#mobytic_3_blocks_home .row > div > div .clip-path {
+  -webkit-clip-path: polygon(0 55%, 55% 45%, 45% 60%, 100% 50%, 100% 100%, 0 100%);
+          clip-path: polygon(0 55%, 55% 45%, 45% 60%, 100% 50%, 100% 100%, 0 100%);
+  background: white;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 50% 50%;
+      grid-template-rows: 50% 50%;
+  border-radius: 15px;
+  -webkit-transform: translateY(1px) scaleX(1.0001);
+          transform: translateY(1px) scaleX(1.0001);
+}
+
+#mobytic_3_blocks_home .row > div > div .clip-path > div {
+  position: relative;
+}
+
+#mobytic_3_blocks_home .row > div > div .clip-path > div > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#mobytic_3_blocks_home .row > div > div .clip-path > div > div .title,
+#mobytic_3_blocks_home .row > div > div .clip-path > div > div .mobytic_button {
+  text-transform: uppercase;
+}
+
+#mobytic_3_blocks_home .row > div > div .clip-path > div > div .title {
+  color: #233e54;
+  font-size: 18px;
+  width: 100%;
+  padding: 0 10px;
+  text-align: center;
+}
+
+#mobytic_3_blocks_home .row > div > div .clip-path > div > div .mobytic_button {
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 25px;
+  margin-top: 25px;
+  border-radius: 20px;
+  background-color: #ff3d3d;
+  font-weight: bold;
+  text-align: center;
+}
+/*# sourceMappingURL=front.css.map */
